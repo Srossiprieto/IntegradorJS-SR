@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petline</title>
 
-    <link rel="stylesheet" href='/assets/style.css'>
-    <link rel="stylesheet" href='/assets/mediaqueries.css'>
-    <link rel="stylesheet" href='/assets/index.js'>
+
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/mediaqueries.css">
+    <link rel="stylesheet" href="/assets/animaciones.css">
 
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -27,19 +28,51 @@
 <body>
     <!-- ===============Header=============== -->
     <header>
+
+
+
+
+        <div class="menu-label">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
         <a href="#" class="logo"><img src="/img/logo.png" alt="Logo"></a>
-            <ul class="navbar-list">
-                <li> <a href="#home"> Home </a> </li>
-                <li> <a href="#service"> Servicios </a> </li>
-                <li> <a href="#about"> Nosotros </a> </li>
-                <li> <a href="#products"> Productos </a> </li>
-                <li> <a href="#contact"> Contactanos </a> </li>
-            </ul>
-            <div class="nav-icon">
-                <a href="#"><i class='bx bx-cart'></i></a>
-                <a href="/index.html" id="logoutButton"><i class="bx bx-log-out"></i></a>
-                <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar-list" id="menu">
+            <li> <a class="navbar-link" href="#home"> Inicio </a> </li>
+            <li> <a class="navbar-link" href="#service"> Servicios </a> </li>
+            <li> <a class="navbar-link" href="#about"> Nosotros </a> </li>
+            <li> <a class="navbar-link" href="#products"> Productos </a> </li>
+            <li> <a class="navbar-link" href="#contact"> Contactanos </a> </li>
+        </ul>
+        <div class="nav-icon">
+            <a href="/index.html"><i class="bx bx-log-out"></i></a>
+            <div class="cart-label">
+                <i class="bx bx-cart cart-icon">
+                  <div class="cart-bubble">0</div>
+                </i>
+              </div>
+        
+        <div class="cart">
+
+            <h2>Tus Productos</h2>
+    
+    
+            <div class="cart-container">
+    
             </div>
+    
+            <span class="divider"></span>
+    
+            <div class="cart-total">
+              <p>Total:</p>
+              <span class="total">$1800</span>
+            </div>
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-delete">Vaciar carrito</button>
+          </div>
+    
+          <div class="overlay"></div>
 
     </header>
 
@@ -74,22 +107,22 @@
             <div class="info-cards-container">
   
                 <div  class="info-card">
-                    <img src="/img/service-icon-1.png" alt="Entrega">
+                    <img src="img/service-icon-1.png" alt="Entrega">
                     <h3>Entrega gratuita</h3>
                     <p>Envío gratuito en pedidos de $35 o más hoy.</p>
                 </div>
                 <div  class="info-card">
-                    <img src="/img/service-icon-2.png" alt="Regreso">
+                    <img src="img/service-icon-2.png" alt="Regreso">
                     <h3>Regreso de 30 días</h3>
                     <p>35% de descuento en tu primer pedido más 5% de descuento en todos los pedidos futuros.</p>
                 </div>
                 <div  class="info-card">
-                    <img src="/img/service-icon-3.png" alt="Pago de seguridad">
+                    <img src="img/service-icon-3.png" alt="Pago de seguridad">
                     <h3>Pago de seguridad</h3>
                     <p>25% de descuento en tu pedido en línea de $50+. Disponible en la mayoría de las ubicaciones.</p>
                 </div>
                 <div  class="info-card">
-                    <img src="/img/service-icon-4.png" alt="Soporte">
+                    <img src="img/service-icon-4.png" alt="Soporte">
                     <h3>Soporte 24 horas al día</h3>
                     <p>Compre en línea para recibir pedidos superiores a $35 enviados de forma rápida y gratuita.</p>
                 </div>
@@ -113,40 +146,54 @@
                 </div>
             </div>
         </section>
-        <section class="service" id="service">
-            <img src="/img/service-image.png" alt="service-image" class="service-img">
-            <div class="service-title">
-                <h2>
-                    <span>Lo que tu mascota necesita</span>, cuando lo necesita.
-                </h2>
+        <section id="products">
+            <h2>Productos</h2>
+            <!-- categorías -->
+            <div class="categories">
+              <button class="category active" >✨Todos</button>
+              <button class="category" data-category="perros">🐶Perros</button>
+              <button class="category" data-category="gatos">🐱Gatos</button>
+              <button class="category" data-category="peces">🐟Peces</button>
+              <button class="category" data-category="aves">🦅Aves</button>
             </div>
+      
+            <!-- products -->
+            <div class="products-container">
+                <!--  -->
+            </div>          
 
-
-            <div class="info-cards-container">
-  
-                <div  class="info-card">
-                    <img src='/img/service-icon-1.png' alt="Entrega">
-                    <h3>Entrega gratuita</h3>
-                    <p>Envío gratuito en pedidos de $35 o más hoy.</p>
-                </div>
-                <div  class="info-card">
-                    <img src='/img/service-icon-2.png' alt="Regreso">
-                    <h3>Regreso de 30 días</h3>
-                    <p>35% de descuento en tu primer pedido más 5% de descuento en todos los pedidos futuros.</p>
-                </div>
-                <div  class="info-card">
-                    <img src='/img/service-icon-3.png' alt="Pago de seguridad">
-                    <h3>Pago de seguridad</h3>
-                    <p>25% de descuento en tu pedido en línea de $50+. Disponible en la mayoría de las ubicaciones.</p>
-                </div>
-                <div  class="info-card">
-                    <img src='/img/service-icon-4.png'alt="Soporte">
-                    <h3>Soporte 24 horas al día</h3>
-                    <p>Compre en línea para recibir pedidos superiores a $35 enviados de forma rápida y gratuita.</p>
-                </div>
-            </div>
+            <button class="btn-load">Ver Más</button>
         </section>
-
+        <section class="contact" id="contact">
+            <form class="form__container" id="contact-form" novalidate>
+                <h1 class="form__title">Contactanos</h1>
+        
+                <div class="form__field">
+                    <input type="text" placeholder="Nombre" class="form__input" id="name" autocomplete="off" />
+                    <small></small>
+                </div>
+        
+                <div class="form__field">
+                    <input type="text" placeholder="Apellido" class="form__input" id="lastName" autocomplete="off" />
+                    <small></small>
+                </div>
+        
+                <div class="form__field">
+                    <input type="email" placeholder="Email" class="form__input" id="email" autocomplete="off" />
+                    <small></small>
+                </div>
+        
+                <div class="form__field">
+                    <textarea id="opinion" class="form__input" name="opinion" rows="4" cols="50" autocomplete="off" placeholder="Escribe aquí tu Comentario..."></textarea>
+                    <small></small>
+                </div>
+        
+                <input type="submit" class="form__submit__btn" value="Enviar" />
+        
+            </form>
+        </section>
+        
+      
     </main>
 
     <!-- ===============Footer=============== -->
@@ -219,11 +266,12 @@
           </div>
 
     </footer>
-
+    <div class="add-modal"></div>
 
     
 <!-- Link JS -->
-    <script src="/assets/index.js"></script>
+    <script src="./assets/data.js"></script>
+    <script src="./assets/index.js"></script>
 
 </body>
 </html>
