@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petline</title>
+
+    <!-- ====FAVICON==== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+
+    <link rel="stylesheet" href="/assets/forms.css">
+    <link rel="stylesheet" href="/assets/mediaqueries.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="/img/logoOrange.png" alt="Logo"></a>
+    </header>
+    <main>
+        <form class="form__container" id="login--form" novalidate>
+            <p class="form__title">Iniciá Sesión</p>
+
+            <!-- Email -->
+            <div class="form__field">
+                <input type="email" placeholder="Email" class="form__input" id="email" autocomplete="off" />
+            </div>
+            <!-- Email -->
+
+            <!-- Contraseña -->
+            <div class="form__field">
+                <input type="password" placeholder="Contraseña" class="form__input" id="password" autocomplete="off" />
+            </div>
+            <!-- Contraseña -->
+
+            <small id="form__error"></small>
+            <input type="submit" class="form__submit__btn" value="Iniciar Sesión" />
+            <p class="form--redirect">¿No tenés cuenta? <a class="link--btn" href="/pages/register.html">Registrate</a>
+            </p>
+        </form>
+    </main>
+    <script src="/assets/login.js"></script>
+</body>
+</html>

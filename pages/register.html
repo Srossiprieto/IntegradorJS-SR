@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petline</title>
+  
+  <!-- ====FAVICON==== -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+  <link rel="stylesheet" href="/assets/forms.css">
+  <link rel="stylesheet" href="/assets/mediaqueries.css">
+
+
+
+  
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="/img/logoOrange.png" alt="Logo"></a>
+    </header>
+    <main>
+        <form class="form__container" id="register-form" novalidate>
+            <p class="form__title">Crea tu cuenta</p>
+            <!-- Nombre -->
+            <div class="form__field">
+              <input type="text" placeholder="Nombre" class="form__input" id="name" autocomplete="off" />
+              <small></small>
+            </div>
+            <!-- Nombre -->
+        
+            <!-- Apellido -->
+            <div class="form__field">
+              <input type="text" placeholder="Apellido" class="form__input" id="lastName" autocomplete="off" />
+              <small></small>
+            </div>
+            <!-- Apellido -->
+        
+            <!-- Email -->
+            <div class="form__field">
+              <input type="email" placeholder="Email" class="form__input" id="email" autocomplete="off" />
+              <small></small>
+            </div>
+            <!-- Email -->
+        
+            <!-- Password -->
+            <div class="form__field">
+              <input type="password" placeholder="Contraseña" class="form__input" id="password" autocomplete="off" />
+              <small></small>
+            </div>
+            <!-- Password -->
+        
+            <!-- Teléfono -->
+            <div class="form__field">
+              <input type="text" placeholder="Teléfono" class="form__input" id="phone" autocomplete="off" />
+              <small></small>
+            </div>
+            <!-- Telefono -->
+        
+            <input type="submit" class="form__submit__btn" value="Registrarse" />
+            <p class="form--redirect">¿Ya tenés cuenta? <a class="link--btn" href="./login.html">Iniciá Sesión</a></p>
+        </form>
+    </main>
+    <script src="/assets/register.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+:root{
+  
+  --bright-yellow-crayola: #f8a62a;     
+  --portland-orange: #ed6335;
+  --battleship-gray: #878787;
+  --silver-chalice: #b3b3b3;
+  --spanish-gray: #999999;
+  --sonic-silver: #6d767e;
+  --raisin-black: #292a2e;
+  --eerie-black: #202122;
+  --bittersweet: #fc7b64;
+  --light-gray: #cccccc;
+  --platinum: #e8e8e8;
+
+
+
+
+  --amber: #ffc105;
+  --white: #ffffff;
+  --black: #000000;
+  --onyx: #3c3d3e;
+  --blue: #2A6DF9;
+  --blue-ribbon-50: #eff5ff;
+  --blue-ribbon-100: #dae8ff;
+  --blue-ribbon-200: #bed7ff;
+  --blue-ribbon-300: #91bfff;
+  --blue-ribbon-400: #5d9cfd;
+  --blue-ribbon-500: #2a6df9;
+  --blue-ribbon-600: #2156ef;
+  --blue-ribbon-700: #1a41db;
+  --blue-ribbon-800: #1b37b2;
+  --blue-ribbon-900: #1c338c;
+  --blue-ribbon-950: #162055;
+
+  --grey: #A3A3A3;
+  --moscuro:#5E562A;
+
+  --web-orange-fond: #f9942a;
+  --web-orange-50: #fff9eb;
+  --web-orange-100: #fdedc8;
+  --web-orange-200: #fbd88c;
+  --web-orange-300: #f9be50;
+  --web-orange-400: #f8a62a;
+  --web-orange-500: #f2820e;
+  --web-orange-600: #d65f09;
+  --web-orange-700: #b23f0b;
+  --web-orange-800: #903110;
+  --web-orange-900: #762911;
+  --web-orange-950: #441204;
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+main {
+  background: linear-gradient(to bottom, white, var(--web-orange-100), var(--web-orange-100), var(--web-orange-50), white);
+  width: 100%;
+  height: 100vh;
+  padding-top: 50px; /* Ajuste para dar espacio al navbar fijo */
+  overflow-y: auto; /* Asegura que el contenido adicional sea desplazable */
+  position: relative; /* Asegura que las posiciones relativas funcionen correctamente */
+}
+
+
+header{
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10%;
+}
+
+.logo img {
+  width: 35px;
+  height: auto;
+}
+
+/* 
+==================REGISTER DESING============
+ */
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+ 
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.form__title {
+  margin-bottom: 10px;
+  background: linear-gradient(to bottom, var(--web-orange-fond), var(--web-orange-200));
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 40px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__input {
+  padding: 15px 35px 15px 15px;
+  border-radius: 8px;
+  background-color: var(--platinum);
+  color: var(--onyx);
+  font-weight: 400;
+  outline: none;
+  border: none;
+  width: 350px;
+  margin: 5px 0px;
+}
+
+p.form--redirect{
+  color: var(--web-orange-950);
+}
+a.link--btn{
+  color: var(--web-orange-fond);
+  font-weight: 600;
+}
+a.link--btn:hover{
+  color: var(--web-orange-950);
+}
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 90px #252525 inset !important;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: #fff !important;
+}
+
+.form__submit__btn {
+  font-size: 0.9rem;
+  background: var(--web-orange-fond); /* fallback for old browsers */
+  background: -webkit-linear-gradient(135deg, var(--web-orange-400) 0%, var(--web-orange-600) 100%);
+  background: linear-gradient(135deg, var(--web-orange-400)0%, var(--web-orange-600) 100%);
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 350px;
+}
+
+.form__submit__btn:hover {
+  background: -webkit-linear-gradient(135deg, var(--web-orange-600) 0%, var(--web-orange-400) 100%);
+  background: linear-gradient(135deg, var(--web-orange-600)  0%, var(--web-orange-400));
+}
+
+
+
+/* Error / Success */
+.form__field.error input {
+  border: 2px solid #dc3545;
+}
+
+.form__field small {
+  color: #dc3545;
+  max-width: 350px;
+  text-align: center;
+  display: none;
+}
+
+.form__field.success input {
+  border: 2px solid #28a745;
+}
+
+#form__error {
+  color: #dc3545;
+  font-size: 1rem;
+  margin: 8px 0px;
+  max-width: 350px;
+  text-align: center;
+}
+ 
+ 

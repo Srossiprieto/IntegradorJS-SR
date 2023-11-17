@@ -1,0 +1,210 @@
+:root{
+  
+    --bright-yellow-crayola: #f8a62a;     
+    --portland-orange: #ed6335;
+    --battleship-gray: #878787;
+    --silver-chalice: #b3b3b3;
+    --spanish-gray: #999999;
+    --sonic-silver: #6d767e;
+    --raisin-black: #292a2e;
+    --eerie-black: #202122;
+    --bittersweet: #fc7b64;
+    --light-gray: #cccccc;
+    --platinum: #e8e8e8;
+    --morad: #50007f;
+  
+  
+  
+    --amber: #ffc105;
+    --white: #ffffff;
+    --grey-product: #5f5b58;
+    --black: #000000;
+    --onyx: #3c3d3e;
+    --blue: #2A6DF9;
+    --blue-ribbon-50: #eff5ff;
+    --blue-ribbon-100: #dae8ff;
+    --blue-ribbon-200: #bed7ff;
+    --blue-ribbon-300: #91bfff;
+    --blue-ribbon-400: #5d9cfd;
+    --blue-ribbon-500: #2a6df9;
+    --blue-ribbon-600: #2156ef;
+    --blue-ribbon-700: #1a41db;
+    --blue-ribbon-800: #1b37b2;
+    --blue-ribbon-900: #1c338c;
+    --blue-ribbon-950: #162055;
+  
+    --grey: #A3A3A3;
+    --shark-50: #f4f5f7;
+    --shark-100: #e4e7e9;
+    --shark-200: #ccd1d5;
+    --shark-300: #a8b1b8;
+    --shark-400: #7d8893;
+    --shark-500: #626d78;
+    --shark-600: #545d66;
+    --shark-700: #484e56;
+    --shark-800: #40454a;
+    --shark-900: #383b41;
+    --shark-950: #2b2e33;
+  
+  
+    --moscuro:#5E562A;
+  
+    --web-orange-fond: #f9942a;
+    --web-orange-50: #fff9eb;
+    --web-orange-100: #fdedc8;
+    --web-orange-200: #fbd88c;
+    --web-orange-300: #f9be50;
+    --web-orange-400: #f8a62a;
+    --web-orange-500: #f2820e;
+    --web-orange-600: #d65f09;
+    --web-orange-700: #b23f0b;
+    --web-orange-800: #903110;
+    --web-orange-900: #762911;
+    --web-orange-950: #441204;
+  
+  }
+
+
+
+  @media (max-width: 1100px){
+
+      /* cat banner */
+      .cat-banner{
+        display: none;
+    }
+
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        padding-block-start: 200px;
+        padding-inline-start: 20%;
+    }
+    .about-text h1 {
+        font-size: 40px;
+    }
+  }
+
+@media (max-width: 992px){
+    .navbar {
+        gap: 10px;
+      }
+
+      .navbar-list {
+        position: absolute;
+        top: 70px;
+        left: 0%;
+        right: 100%;
+        width: 45%;
+        height: 100vh;
+        flex-direction: column;
+        background: linear-gradient(to bottom, var(--web-orange-50), var(--web-orange-100), var(--web-orange-200));
+        border-top: 0px;
+        align-items: flex-start;
+        padding: 40px 10px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+      }
+    
+      .navbar-list a {
+        font-size: 18px;
+        color: var(--black);
+      }
+      .navbar-list a:hover{
+        color: var(--web-orange-fond);
+      }
+      /* Mostramos el icono del menu */
+      .menu-label {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+
+    }
+    
+    .menu-label span {
+        height: 1.5px;
+        width: 18px;
+        background: var(--platinum);
+        transition: transform 0.3s;
+    }
+
+    
+      .open-menu {
+        display: flex;
+      }
+    
+    /* Footer */
+
+
+    .footer-row {
+        flex-direction: column;
+    }
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-bottom__container{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+
+    .social-link{
+        gap: 10px;
+    }
+
+
+
+
+
+
+
+    /* cards */
+    .info-cards-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* categories */
+    .categories {
+        flex-wrap: wrap;
+        max-width: 390px;
+    }
+}
+
+    
+
+
+@media (max-width: 576px) {
+    .main-text h1 {
+        font-size: 55px;
+    }
+    .img{
+        max-width: 270px;
+    }
+    .products-container {
+        width: 50%;
+    }
+     /* Modificar el carrito para celu*/
+  .cart {
+    left: 0;
+    width: 100%;
+    border: none;
+    align-items: center;
+  }
+
+  .cart-item {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 380px) {
+    .form__input,
+    .form__submit__btn{
+        width: 300px;
+    }
+}
