@@ -155,7 +155,7 @@ main{
   display: flex;
   align-items: center;
   padding: 0 10%; /* Ajusta el padding para no ocupar excesivo espacio */
-  background-image: url('/img/hero-banner.png');
+  background-image: url('/img/hero-banner.webp');
   background-position: center; /* Posiciona la imagen a la izquierda */
   background-size: cover; /* Ajusta la imagen al tamaño manteniendo su proporción */
   background-repeat: no-repeat;

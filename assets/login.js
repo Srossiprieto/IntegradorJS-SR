@@ -69,7 +69,7 @@ const logout = () => {
   // Elimina el usuario activo de sessionStorage
   sessionStorage.removeItem('activeUser');
   // Redirige al usuario a la página de inicio de sesión
-  window.location.href = '/index.html'; // Reemplaza 'index.html' con la URL correcta de tu página de inicio de sesión
+  window.location.href = '/index.html';
 };
 
 
